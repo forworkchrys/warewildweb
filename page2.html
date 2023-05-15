@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อุบัติเหตุและการปฐมพยาบาล</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+            <div class="container">
+              <a class="navbar-brand img-fluid" href="index.html"><img src="image/logo.png" width="auto" height="66px" alt=""></a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="menu" class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- ms auto ชิดขวา -->
+                        <li><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                        <li><a class="nav-link" href="page1.html">เตรียมตัว</a></li>
+                        <li><a class="nav-link" href="page2.html">อุบัติเหตุ</a></li>
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">สัตว์&สัตว์ขาข้อ</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="page3.html">ยุงก้นปล่อง</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="page4.html">ยุงลาย</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="page5.html">ไรอ่อน</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="page6.html">เห็บ</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="page7.html">ทากดูดเลือด</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">โรคร้ายในป่า</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="page8.html">โรคมาลาเรีย</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="page9.html">โรคพิษสุนัขบ้า</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="page10.html">โรคไข้รากสาดใหญ่</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="page11.html">โรคฉี่หนู</a>
+                            </div>
+                        </li>
+                        <!-- ms = margin start -->
+                    </ul>
+                    <div class="col-md-20 ms-auto">
+                        <a id="btn" class="ms-3 nav-link btn text-white" href="#footer">Contact</a></li>
+                        <div class="bg-music">
+                          <audio src="audio/forest-wind-and-birds-6881.mp3" autoplay>
+                            </audio>
+                            <!-- <button type="button" class="btn" id="music-btn">
+                              <i class="fa-solid fa-headphones" style="color: #fafcff;"></i>
+                              <i class="fa-minus" style="color: #f0f8ff;"></i>
+                          </button> -->
+                      </div>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <div class="parallax" >
+        <section data-aos="fade-up"
+        data-aos-duration="2000">
+            <!-- <img id="grass" src="image/hearder2/grass.png" alt=""> -->
+            <img id="light" src="image/hearder2/แสง.png" alt="">
+            <img id="pill" src="image/hearder2/ยา.png" alt="">
+            <img id="flower_r" src="image/hearder2/ดอกไม้ขวา.png" alt="">
+            <img id="flower_r_ab" src="image/hearder2/ดอกไม้ขวาบน.png" alt="">
+            <img id="plaster" src="image/hearder2/พลาสเตอร์.png" alt="">
+            <img id="bandage" src="image/hearder2/ผ้าม้วน.png" alt="">
+            <img id="flower_l" src="image/hearder2/ดอกไม้ซ้าย.png" alt="">
+            <img id="flower_l_ab" src="image/hearder2/ดอกไม้ซ้ายบน.png" alt="">
+            <img id="cotton" src="image/hearder2/สำลี.png" alt="">
+            <img id="mainname" src="image/titlte33-01-01.png" data-aos="fade-up"
+            data-aos-duration="3000" alt="">
+            <!-- <img id="whitegrass" src="image/hearder2/whitegrass-01-01.png" alt=""> -->
+        </section>
+    </div>
+    <section class="equip mt-5">
+        <div class="container p-5">
+          <img id="picture" src="image2/mainaid.png" class="mx-auto" alt="">
+          <div class="carousel m-4 bg-white">
+            <div class="swiper p-5">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="col-md-12 col-sm-12 p-5 mt-3" data-aos="zoom-in" data-aos-duration="1000">
+                        <h2>อุปกรณ์ปฐมพยาบาลที่ควรเตรียมไปมีดังนี้</h2>
+                        <div class="row align-items-start mt-5">
+                            <div class="col">
+                              <img src="image2/ผ้ากอซ.png" class="" alt="">
+                              <p>01. ผ้ากอซ</p>
+                            </div>
+                            <div class="col">
+                                <img src="image2/ผ้ายืด.png" alt="">
+                                <p>02. ผ้าพันแผลแบบม้วนเพิ่มเติม <br> (แบบยืดหรือแบบค็อตตอนน้ำหนักน้อย)
+                                </p>
+                              </div>
+                              <div class="col">
+                                <img src="image2/พลาสเตอร์.png" alt="">
+                                <p>03. พลาสเตอร์ปิดแผล <br> หรือพลาสเตอร์แบบปีกผีเสื้อ</p>
+                              </div>
+                          </div>
+                          <div class="row align-items-start mt-5">
+                            <div class="col">
+                                <img src="image2/ปากคีบ.png" alt="">
+                                <p>04. ปากคีบ</p>
+                              </div>
+                              <div class="col">
+                                <img src="image2/ถุงมือยาง.png" alt="">
+                                <p>05. ถุงมือยาง</p>
+                              </div>
+                              <div class="col">
+                                <img src="image2/disinfection.png" alt="">
+                                <p>06. แผ่นเช็ดฆ่าเชื้อ</p>
+                              </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-md-12 col-sm-12 p-5 mt-3">
+                      <h2>อุปกรณ์ปฐมพยาบาลที่ควรเตรียมไปมีดังนี้</h2>
+                      <div class="row align-items-start mt-5">
+                          <div class="col">
+                            <img src="image2/เม็ดเกลือแร่.png" alt="">
+                            <p>07. เม็ดเกลือแร่ละลายน้ำ</p>
+                          </div>
+                          <div class="col">
+                              <img src="image2/ไอบูโปรเฟน.png" alt="">
+                              <p>08. ยาที่มีไอบูโปรเฟนและพาราเซตามอลแก้ไข้</p>
+                            </div>
+                            <div class="col">
+                              <img src="image2/ยาทาแผล.png" alt="">
+                              <p>09. ครีมทาแผลสดฆ่าเชื้อ</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-start mt-5">
+                          <div class="col">
+                              <img src="image2/ยาแก้แพ้.png" alt="">
+                              <p>10. ยาแก้แพ้</p>
+                            </div>
+                            <div class="col">
+                              <img src="image2/ยาแก้ท้องเสีย.png" alt="">
+                              <p>11. ยาแก้ท้องเสีย</p>
+                            </div>
+                            <div class="col">
+                              <img src="image2/ยาปฏิชีวนะ.png" alt="">
+                              <p>12. ยาปฏิชีวนะ</p>
+                            </div>
+                        </div>
+                  </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-md-12 col-sm-12 p-5 mt-3">
+                      <h2>อุปกรณ์ปฐมพยาบาลที่ควรเตรียมไปมีดังนี้</h2>
+                      <div class="row align-items-start mt-5">
+                          <div class="col">
+                            <img src="image2/สำลีก้าน.png" class="" alt="">
+                            <p>13. สำลี ไม้พันสำลี</p>
+                          </div>
+                          <div class="col">
+                              <img src="image2/แผ่นไม้.png" alt="">
+                              <p>14. วัสดุแข็งทำเฝือก <br> (สามารถใช้กิ่งไม้แข็งๆได้)</p>
+                            </div>
+                            <div class="col">
+                              <img src="image2/ยากันยุง.png" alt="">
+                              <p>15. ยากันยุง ยาไล่แมลง เช่น ยาที่มีส่วนประกอบของ DEET เก็บไว้ในขวดมิดชิด
+                              </p>
+                            </div>
+                        </div>
+                        <div class="row align-items-start mt-5">
+                          <div class="col">
+                              <img src="image2/แอลกอฮอล์2.png" alt="">
+                              <p>16. แอลกอฮอล์ ยาฆ่าเชื้อแบบต่างๆ</p>
+                            </div>
+                            <div class="col">
+                              <img src="image2/กรรไกร.png" alt="">
+                              <p>17. กรรไกร</p>
+                            </div>
+                            <div class="col">
+                              <img src="image2/น้ำยาล้างมือฆ่าเชื้อ.png" alt="">
+                              <p>18. น้ำยาล้างมือฆ่าเชื้อ </p>
+                            </div>
+                        </div>
+                  </div>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+          </div>
+          
+        </div>
+        <div class="container align-items-center" data-aos="fade-up" data-aos-duration="1000">
+          <h2 id="title2" class="col mb-5">การแพ็คอุปกรณ์ปฐมพยาบาลมีสิ่งที่ต้องคำนึงดังนี้</h2>
+          <div class="item-box p-5">
+            <div class="row align-items-center text-center">
+              <div class="col-md bg-white rounded m-2">
+                <img src="image2/aid-1.png" class="p-2 img-fluid" alt="">
+                <p>ถุงที่ใส่ควรเป็นสีสดและเห็นได้ง่าย เช่น ใช้เป็นสีแดงและมีกากบาทสีขาวติดไว้</p>
+              </div>
+              <div class="col-sm bg-white rounded m-2">
+                <img src="image2/aid-2.png" class="p-2 img-fluid" alt="">
+                <p>หยิบจับค้นหาได้ง่าย เก็บอุปกรณ์ในถุงแห้ง มีช่องใสด้านข้างกระเป๋าให้มองเห็นจากภายนอก</p>
+              </div>
+              <div class="col-sm bg-white rounded m-2">
+                <img src="image2/aid-3.png" class="p-2 img-fluid" alt="">
+                <p>ทนทานและกันน้ำ ถุงที่ใส่ต้องหนาเพื่อรักษาความปลอดภัยของอุปกรณ์ และต้องกันน้ำ100%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="firstaid">
+          <div class="container" data-aos="fade-up" data-aos-duration="2000">
+            <div class="col">
+              <h1>มีอาการบาดเจ็บหรืออุบัติเหตุอะไรบ้าง?</h1>
+              <h3>ที่พบได้บ่อยระหว่างการเดินทาง</h3>
+            </div>
+            <div class="container-md">
+              <div class="row">
+                <div class="col">
+                  <button id="btn_1" class="btn text-white">แผลถลอก</button>
+                  <button id="btn_2" class="btn text-white">กระดูกหัก</button>
+                  <button id="btn_3" class="btn text-white">ข้อเท้าแพลง</button>
+                  <button id="btn_4" class="btn text-white">แผลถูกของมีคม</button>
+                  <button id="btn_5" class="btn text-white">เท้าพอง-เล็บม่วง</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="imagecard">
+            <div class="container" data-aos="fade-up" data-aos-duration="2000">
+              <div id="myImage" class="card_1">
+                <h1 class="col text-start">01 แผลถลอก</h1>
+                <p class="col mb-5 text-start">บาดแผลจากการถูกครูด ขีดข่วนผิวหนัง แผลจะตื้นแค่ผิวหนังชั้นนอกและอาจมีเลือดออกเล็กน้อย สิ่งสำคัญคือต้องระวังไม่ให้แผลติดเชื้อ 
+                </p>
+                <img src="image2/แผลถลอก-crd.png" class="img-fluid"  alt="">
+              </div>
+              <div id="myImage2" class="card_2">
+                <h1 class="col text-start">02 กระดูกหัก</h1>
+                <p class="col mb-5 text-start">เมื่อกระดูกหักจะทำให้เกิดอาการบวม เจ็บปวด การหักของกระดูกแบ่งเป็นลักษณะ ดังนี้ <br> 1. กระดูกหักแบบปิด ไม่มีบาดแผลภายนอก กระดูกที่แตกจะอยู่แค่ภายใน ไม่โผล่ออกมาข้างนอกเหนือผิวหนัง <br> 2. กระดูกหักแบบเปิด มีบาดแผลบริเวณตำแหน่งที่กระดูกหัก เห็นปลายกระดูกโผล่พ้นมาทางบาดแผล เสี่ยงติดเชื้อง่าย
+                </p>
+                <img src="image2/กระดูกหัก-crd.png" class="img-fluid" alt="">
+              </div>
+              <div id="myImage3" class="card_3">
+                <h1 class="col text-start">03 ข้อเท้าแพลง</h1>
+                <p class="col mb-5 text-start">สาเหตุจากการเดินบนพื้นไม่เรียบ ซึ่งเป็นลักษณะของเส้นทางเดินป่าส่วนใหญ่ หรือจากการตกจากที่สูง ทำให้เกิดการบิด หมุนพลิกของข้อเท้า เอ็นและเนื้อเยื่ออาจฉีกขาด มีอาการ ปวด บวม กดเจ็บบริเวณเท้า</p>
+                <img src="image2/ข้อเท้าแพลง-crd.png" class="img-fluid" alt="">
+              </div>
+              <div id="myImage4" class="card_4">
+                <h1 class="col text-start">04 แผลถูกของมีคมบาด</h1>
+                <p class="col mb-5 text-start">ลักษณะเป็นบาดแผลเปิด ฉีกขาดของผิวหนัง จากการโดนของมีคมหรือถูกวัตถุกระแทกอย่างแรงจนเกิดบาดแผลมีเลือดไหลออกมา</p>
+                <img src="image2/มีคม-crd.png" class="img-fluid" alt="">
+              </div>
+              <div id="myImage5" class="card_5">
+                <h1 class="col text-start">05 เท้าพองและเล็บม่วง</h1>
+                <p class="col mb-5 text-start">การเดินป่าใช้เวลาส่วนมากไปกับการเดิน ทำให้เท้าเสียดสีกับรองเท้าร่วมกับการระบายอากาศไม่ดีพอ ทำให้เกิดความร้อนชื้น หลอดเลือดขยายตัวทำให้เกิดการบวมเป็นตุ่มพอง มีลักษณะพองจากการอักเสบ มีน้ำข้างใน และการกดทับจากรองเท้าที่แน่นเกินไปอาจทำให้เกิดอาการเล็บม่วงขึ้นมาได้</p>
+                <img src="image2/เท้าพอง-crd.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer id="footer">
+      <div class="footer-top text-center">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 footer-menus">
+              <h4>จัดทำโดย</h4>
+              <p>นางสาว กวินทรา สวินทร <br> สาขาเทคโนโลยีการศึกษาแพทยศาสตร์ <br>
+                คณะแพทยศาสตร์ศิริราชพยาบาล
+                มหาวิทยาลัยมหิดล</p>
+            </div>
+            <div class="col-lg-4 footer-menus">
+              <img src="image/Logo9.png" class="img-fluid" width="230px" height="80px" alt="">
+            </div>
+            <div class="col-lg-4 footer-menus">
+              <h4>ช่องทางการติดต่อ</h4>
+              <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                kawintra09@gmail.com
+              </p>
+              <p>
+                <i class="fab fa-facebook-f me-3 text-secondary"></i>
+                kawintra sawinthorn
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="col-lg-12">
+            <h2>แหล่งข้อมูล</h2>
+            <a id="source" href="https://www.thepuffinhouse.com/blog/9-%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B9%87%E0%B8%9A%E0%B8%A1%E0%B9%88%E0%B8%A7%E0%B8%87-%E0%B9%80%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%9E%E0%B8%AD%E0%B8%87-%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B8%9B%E0%B9%88%E0%B8%B2/90">9 วิธีป้องกันเล็บม่วง, เท้าพอง จากการเดินป่า,</a>
+            <a id="source" href="https://www.e-tankstore.com/blog?slug=how-to-pack-first-aid-kit-for-camping&fbclid=IwAR1uvvrYN8EwkxafqJ8SvpoeWGHbCHqvIHu4yg8COx7Cd6NwQo5ZUsEKN3Y">วิธีเตรียมชุดปฐมพยาบาลไปแคมป์ปิ้ง,</a>
+            <a id="source" href="https://www.vejthani.com/th/2021/05/%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%9A%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88/">ปฐมพยาบาลเบื้องต้นเมื่อสงสัยว่ากระดูกหัก,</a>
+            <a id="source" href="https://www.paolohospital.com/th-TH/chokchai4/Article/Details/%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%9A%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%99-%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B9%E0%B8%81%E0%B8%AB%E0%B8%B1%E0%B8%81%E2%80%A6%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A5">วิธีปฐมพยาบาลเบื้องต้น เมื่อกระดูกหัก…ก่อนส่งโรงพยาบาล,</a>
+            <br>
+            <a id="source" href="https://chulalongkornhospital.go.th/kcmh/line/%E0%B8%9F%E0%B8%AD%E0%B8%81%E0%B8%8A%E0%B9%89%E0%B8%B3%E0%B8%94%E0%B8%B3%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%A7-%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%84%E0%B8%9A/">ฟกช้ำดำเขียว ต้องประคบร้อนหรือประคบเย็น,</a>
+            <a id="source" href="https://thainakarin.co.th/ankle-sprain-sports-ortho-tnh/">ข้อเท้าพลิก ข้อเท้าแพลง…บาดเจ็บจากการเล่นกีฬา,</a>
+            <a id="source" href="https://www.thaitravelclinic.com/blog/th/other-travel-tips/thai-first-aid.html?fbclid=IwAR0wNQ2cNnwjAcoJ_qn1W_2pJuG2imR1RuhUi7bDxVpLkvum7nQaRF5masY">การปฐมพยาบาลเบื้องต้นเมื่อเกิดการบาดเจ็บขณะเดินทาง,</a>
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script2.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script>
+        /* ========
+    Debugger plugin, simple demo plugin to console.log some of callbacks
+    ======== */
+        function myPlugin({ swiper, extendParams, on }) {
+          extendParams({
+            debugger: false,
+          });
+    
+          on('init', () => {
+            if (!swiper.params.debugger) return;
+            console.log('init');
+          });
+          on('click', (swiper, e) => {
+            if (!swiper.params.debugger) return;
+            console.log('click');
+          });
+          on('tap', (swiper, e) => {
+            if (!swiper.params.debugger) return;
+            console.log('tap');
+          });
+          on('doubleTap', (swiper, e) => {
+            if (!swiper.params.debugger) return;
+            console.log('doubleTap');
+          });
+          on('sliderMove', (swiper, e) => {
+            if (!swiper.params.debugger) return;
+            console.log('sliderMove');
+          });
+          on('slideChange', () => {
+            if (!swiper.params.debugger) return;
+            console.log(
+              'slideChange',
+              swiper.previousIndex,
+              '->',
+              swiper.activeIndex
+            );
+          });
+          on('slideChangeTransitionStart', () => {
+            if (!swiper.params.debugger) return;
+            console.log('slideChangeTransitionStart');
+          });
+          on('slideChangeTransitionEnd', () => {
+            if (!swiper.params.debugger) return;
+            console.log('slideChangeTransitionEnd');
+          });
+          on('transitionStart', () => {
+            if (!swiper.params.debugger) return;
+            console.log('transitionStart');
+          });
+          on('transitionEnd', () => {
+            if (!swiper.params.debugger) return;
+            console.log('transitionEnd');
+          });
+          on('fromEdge', () => {
+            if (!swiper.params.debugger) return;
+            console.log('fromEdge');
+          });
+          on('reachBeginning', () => {
+            if (!swiper.params.debugger) return;
+            console.log('reachBeginning');
+          });
+          on('reachEnd', () => {
+            if (!swiper.params.debugger) return;
+            console.log('reachEnd');
+          });
+        }
+      </script>
+    
+      <script>
+        // Init Swiper
+        var swiper = new Swiper('.swiper', {
+          // Install Plugin To Swiper
+          modules: [myPlugin],
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          // Enable debugger
+          debugger: true,
+        });
+      </script>
+        <script>
+          const navEl = document.querySelector('.navbar');
+  
+          window.addEventListener('scroll', () => {
+            if (window.scrollY >= 56) {
+              navEl.classList.add('navbar-scrolled');
+            } else if (window.scrollY < 56) {
+              navEl.classList.remove('navbar-scrolled')
+            }
+  
+          });
+        </script>
+</body>
+</html>

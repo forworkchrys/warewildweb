@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#btn{
+    margin: 0 10px;
+    border-radius: 50px;
+    padding: 6px 15px;
+    background-color: rgb(64, 182, 182);
+}
+.navbar{
+    background: #00000080;
+    font-family: 'Prompt', sans-serif;
+    z-index: 3;
+    transition: 0.5s;
+}
+.navbar-nav .nav-link{
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar-scrolled{
+  background-color: #0f0f1fe1;
+}
+ul li{
+    text-align: center;
+    padding: 5px 10px;
+}
+.navbar ul li a{
+    transition: 0.5s;
+}
+.navbar ul li a:hover{
+    background-color: aliceblue;
+    color: rgb(207, 52, 52);
+    border-radius: 100px;
+}
+.parallax{
+    background: url(image/hearder2/grass4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+.parallax section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+}
+.parallax section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+.equip{
+  background: url(image2/bg-page2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 500px; */
+  }
+  .carousel{
+    /* border: 1px solid red; */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+    position: absolute;
+    top: -250px;
+    right: 0;
+    left: 0;
+    /* background-color: bisque; */
+  }
+  .col img{
+    width: 150px;
+  }
+  .col p{
+    margin-top: 20px;
+  }
+  .item-box{
+    background-color: #c4dcd1;
+    border-radius: 5px;
+    font-family: 'Prompt', sans-serif;
+    margin: 0 150px;
+
+  }
+  .item-box img{
+    width: 150px;
+  }
+  .item-box p{
+    padding: 20px;
+  }
+  .firstaid .container{
+    text-align: center;
+    margin-top: 200px;
+    font-family: 'Prompt', sans-serif;
+  }
+  #title2{
+    font-family: 'Prompt', sans-serif;
+    margin-left: 150px;
+    margin-top: -200px;
+  }
+#picture{
+    max-width: 150px;
+    z-index: 2;
+    margin-top: -300px;
+    background-color: #fff;
+    border-radius: 100px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    box-shadow: 0 .5rem 1rem rgba(53, 168, 168, 0.4);
+}
+.swiper-slide{
+  font-family: 'Prompt', sans-serif;
+}
+.col img:hover{
+  transform: scale(1.2);
+  transition: all .2s linear;
+}
+.container{
+  margin: 0 200px;
+}
+.btn{
+  margin: 50px;
+}
+#btn_1, #btn_2, #btn_3, #btn_4, #btn_5{
+  background-color: #3d5c93;
+  border-radius: 100px;
+}
+#btn_1:hover{
+  transform:scale(1.1);
+  transition: all .2s linear;
+  background-color: cadetblue;
+}
+#btn_2:hover{
+  transform:scale(1.1);
+  transition: all .2s linear;
+  background-color: cadetblue;
+}
+#btn_3:hover{
+  transform:scale(1.1);
+  transition: all .2s linear;
+  background-color: cadetblue;
+}
+#btn_4:hover{
+  transform:scale(1.1);
+  transition: all .2s linear;
+  background-color: cadetblue;
+}
+#btn_5:hover{
+  transform:scale(1.1);
+  transition: all .2s linear;
+  background-color: cadetblue;
+}
+.imagecard .container img{
+  box-shadow: 0 .5rem 1rem rgba(6, 31, 31, 0.5);
+  margin-bottom: 150px;
+}
+#myImage2{
+  display: none;
+}
+#myImage3{
+  display: none;
+}
+#myImage4{
+  display: none;
+}
+#myImage5{
+  display: none;
+}
+#whitegrass{
+  margin-top: -150px;
+  width: 100%;
+
+}
+#cotton, #plaster{
+  z-index: 2;
+}
+footer{
+  background-color: #554f70;
+  font-size: 14px;
+  color: aliceblue;
+  font-family: 'Prompt', sans-serif;
+}
+footer .footer-top{
+  background: #0e0e22;
+  padding: 50px 0px 20px;
+  /* margin-top: 150px; */
+}
+footer .footer-top h2{
+  color: #4e5063;
+}
+#source{
+  color: #4e5063;
+ text-decoration: none;
+  }
+  #source:hover{
+    color: #ccc;
+  }
+.card_1 h1{
+font-size: 4rem;
+margin-top: -150px;
+color: rgb(207, 107, 107);
+}
+.card_1 p{
+  font-size: 20px;
+  /* background: #eb8774; */
+  color: #406954;
+  /* padding: 5px 20px; */
+  border-radius: 100px;
+}
+.card_2 h1{
+  font-size: 4rem;
+  margin-top: -150px;
+  color: rgb(207, 107, 107);
+}
+.card_2 p{
+    font-size: 20px;
+    /* background: #eb8774; */
+    color: #406954;
+    /* padding: 20px; */
+    /* border-radius: 10px; */
+    /* border: 1px solid #1c8181; */
+}
+.card_3 h1{
+  font-size: 4rem;
+  margin-top: -150px;
+  color: rgb(207, 107, 107);
+}
+.card_3 p{
+    font-size: 20px;
+    /* background: #eb8774; */
+    color: #406954;
+    /* padding: 5px 20px; */
+    border-radius: 100px;
+}
+.card_4 h1{
+    font-size: 4rem;
+    margin-top: -150px;
+    color: rgb(207, 107, 107);
+}
+.card_4 p{
+      font-size: 20px;
+      /* background: #eb8774; */
+      color: #406954;
+      /* padding: 5px 20px; */
+      border-radius: 100px;
+}
+.card_5 h1{
+      font-size: 4rem;
+      margin-top: -150px;
+      color: rgb(207, 107, 107);
+}
+.card_5 p{
+        font-size: 20px;
+        /* background: #eb8774; */
+        color: #406954;
+        /* padding: 5px 20px; */
+        border-radius: 100px;
+}
+@media (max-width: 576px){
+  .item-box{
+    background-color: #c4dcd1;
+    border-radius: 5px;
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+  }
+  .container{
+    margin: 0;
+  }
+  #title2{
+    font-family: 'Prompt', sans-serif;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 768px){
+  .item-box{
+    background-color: #c4dcd1;
+    border-radius: 5px;
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+  }
+  .container{
+    margin: 0;
+  }
+  .parallax img#mainname{
+    top: 150px;
+    width: 100%;
+}
+  #title2{
+    font-family: 'Prompt', sans-serif;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .item-box img{
+    width: 150px;
+  }
+  .item-box p{
+    padding: 0px;
+  }
+}
+@media (max-width: 992px){
+  .item-box{
+    background-color: #c4dcd1;
+    border-radius: 5px;
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+  }
+  .container{
+    margin: 0;
+  }
+  #title2{
+    font-family: 'Prompt', sans-serif;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .item-box img{
+    width: 150px;
+  }
+  .item-box p{
+    padding: 0px;
+  }
+}
+
