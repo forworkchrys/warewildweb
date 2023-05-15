@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    
+}
+#btn{
+    margin: 0 10px;
+    border-radius: 50px;
+    padding: 6px 15px;
+    background-color: rgb(64, 182, 182);
+}
+.navbar{
+    background: #00000080;
+    font-family: 'Prompt', sans-serif;
+    z-index: 3;
+    transition: 0.5s;
+}
+.navbar-nav .nav-link{
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar-scrolled{
+    background-color: #0f0f1fe1;
+  }
+ul li{
+    text-align: center;
+    padding: 5px 10px;
+}
+.navbar ul li a{
+    transition: 0.5s;
+}
+.navbar ul li a:hover{
+    background-color: aliceblue;
+    color: rgb(207, 52, 52);
+    border-radius: 100px;
+}
+.bh_mt{
+    z-index: -1;
+    background: url(image/headerrr/ฟ้า.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parallax section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+}
+.parallax section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    background-color: #554f70;
+    font-size: 14px;
+    font-family: 'Prompt', sans-serif;
+    color: aliceblue;
+  }
+  footer .footer-top{
+    background: #0e0e22;
+    padding: 50px 0px 20px;
+    /* margin-top: 150px; */
+  }
+  footer .footer-top h2{
+    color: #4e5063;
+  }
+  #source{
+    color: #4e5063;
+    text-decoration: none;
+  }
+  #source:hover{
+    color: #ccc;
+  }
+  .feature{
+    background: url(image1/bg-page1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 150px;
+    z-index: 2;
+}
+  .topic1{
+    font-family: 'Prompt', sans-serif;
+    padding-top: 250px;
+    color: darkslategray;
+  }
+  .topic1 img{
+    border-radius: 5px;
+  }
+  .malaria-info a{
+    text-decoration: none;
+    background-color: #e3b758;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: rgb(27, 20, 31);
+    transition: .2s linear;
+    font-size: 20px;
+}
+.malaria-info a:hover{
+    background-color: #0a2c77;
+    color: aliceblue;
+}
+  .malaria-info h2{
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgb(182, 231, 148);
+    padding: 10px 20px;
+    border-radius: 100px;
+    margin: 0 150px;
+  }
+  .malaria-info p{
+    padding: 3rem;
+    text-indent: 4.5rem;
+    font-size: 18px;
+    background-color: rgb(240, 248, 255, .5);
+    border-radius: 10px;
+  }
+  .box-2{
+    margin-top: 50px;
+  }
+  .equipname{
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+
+}
+.equipname h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    /* background-color: #75a058; */
+    color: rgb(9, 53, 53);
+    border-radius: 100px;
+    font-weight: bolder;
+    padding: 0 3rem;
+}
+.equipname p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 3rem;
+}
+.topic2-wrap{
+    width: 100%;
+    /* background-color: #d3e9c4; */
+    border-radius: 10px;
+    /* border: 1px solid red; */
+}
+.topic2{
+    margin-top: 30px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    font-family: 'Prompt', sans-serif;
+}
+.topic2 .equip-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    margin: 40px;
+}
+.topic2 .equip-container .equip{
+    text-align: center;
+    border-radius: 5px;
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+}
+.topic2 .equip-container .equip:hover{
+    outline: .2rem solid #108864;
+    outline-offset: 0;
+    transition: all .2s linear;
+}
+.topic2 .equip-container .equip img{
+    height: 10rem;
+}
+.topic2 .equip-container .equip:hover img{
+    transform: scale(0.9);
+    transition: all .2s linear;
+}
+.topic2 .equip-container .equip .detail{
+    border: 1px solid #134e36;
+    border-radius: 100px;
+    margin: 5px 80px;
+}
+.topic2 .equip-container .equip h3{
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    
+}
+.topic2 .equip-container .equip:hover h3{
+    color: #4dcfa8;
+}
+.equip-preview{
+    position: fixed;
+    top: 0; left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display:none;
+    align-items: center;
+    font-family: 'Prompt', sans-serif;
+    justify-content: center;
+}
+.equip-preview .preview{
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin: 2rem;
+    width: 40rem;
+}
+.equip-preview .preview.active{
+    display: inline-block;
+}
+.equip-preview .preview img{
+    height: 20rem;
+}
+.equip-preview .preview .fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.equip-preview .preview .fa-times:hover{
+    transform: rotate(90deg);
+    transition: all .2s linear;
+}
+.equip-preview .preview h3{
+    padding: .5rem 0;
+    font-size: 2rem;
+}
+.equip-preview .preview p{
+    padding: 20px;
+}
+.topic3 .content{
+    /* background-color: #81bf83; */
+    /* padding: 100px; */
+    margin-top: 80px;
+    font-family: 'Prompt', sans-serif;
+    /* min-height: 450px; */
+    /* border: 1px solid red; */
+}
+.topic3 h3{
+    text-align: end;
+    font-size: 5rem;
+    margin-top: 200px;
+    font-family: 'Prompt', sans-serif;
+    /* margin-right: 250px; */
+    color: aliceblue;
+}
+#title-p-topic3{
+    text-align: end;
+   /* margin-right: 250px; */
+   font-family: 'Prompt', sans-serif;
+   color: rgb(245, 255, 240);
+   font-size: 18px;
+}
+.topic3 .cloth-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: -320px 0px; */
+    /* border: 1px solid red; */
+    /* background-color: #108864; */
+}
+.topic3 .cloth-contain .cloth-img{
+    /* padding: 50px; */
+    position: relative;
+    /* border: 1px solid red; */
+    /* margin-left: 150px; */
+
+}
+.topic3 .cloth-contain .cloth-img img{
+    /* max-width: 390px; */
+    /* border: 1px solid red; */
+    
+}
+.swiper{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    /* background-color: #3f3f3f; */
+}
+.swiper-slide{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: 50px; */
+}
+.slide-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-content-text h2{
+    text-align: start;
+    font-size: 50px;
+    color: #06302a;
+}
+.slide-content p{
+    text-align: start;
+}
+.slide-content-text{
+    padding: 0 50px;
+}
+.topic4-content{
+    margin-top: 100px;
+    font-family: 'Prompt', sans-serif;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: darkslategray;
+}
+.topic4-content img{
+    /* background-color: #7579ff; */
+    margin-bottom: 50px;
+    max-width: 600px;
+}
+.topic4-content h3{
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(9, 53, 53);
+}
+.topic4-content p{
+    text-indent: 4.5rem;
+    font-size: 20px;
+    margin: 30px 60px 0;
+}
+#line{
+    margin-top: 50px;
+}
+#line-2{
+    margin-top: 50px;
+}
+
+@media (max-width: 1200px){
+    .malaria-info{
+        margin-right:00px;
+      }
+    .malaria-pv {
+        margin-right: 00px;
+    }
+    .topic2 .equip-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 2rem;
+        margin: 0px;
+    }
+    .topic3 .cloth-contain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin: -320px 0px; */
+        /* border: 1px solid red; */
+        /* background-color: #108864; */
+    }
+    .swiper-slide{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* padding: 50px; */
+    }
+    .slide-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .topic4-content p{
+        text-indent: 4.5rem;
+        font-size: 20px;
+        margin: 0;
+    }
+    .bh_mt{
+      display: none;
+    }
+    #text{
+        display: none;
+    }
+    .parallax{
+        z-index: -1;
+        background: url(image/headerrr/res.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .malaria-info h2{
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: rgb(182, 231, 148);
+        padding: 10px 20px;
+        border-radius: 100px;
+        margin: 50px 0;
+      }
+}
