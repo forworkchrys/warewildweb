@@ -41,7 +41,7 @@ ul li{
 }
 .bh_mt{
     z-index: -1;
-    background: url(image/headerrr/ฟ้า.png);
+    background: url(headerrr/ฟ้า.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
