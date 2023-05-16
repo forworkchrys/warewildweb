@@ -36,7 +36,7 @@ ul li{
     border-radius: 100px;
 }
 .parallax{
-    background: url(image/hearder2/grass4.png);
+    background: url(hearder2/grass4.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
