@@ -408,7 +408,7 @@ footer{
     }
     .parallax{
         z-index: -1;
-        background: url(image/headerrr/res.png);
+        background: url(headerrr/res.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
