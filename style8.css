@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    
+}
+#btn{
+    margin: 0 10px;
+    border-radius: 50px;
+    padding: 6px 15px;
+    background-color: rgb(64, 182, 182);
+}
+.navbar{
+    background: #00000080;
+    font-family: 'Prompt', sans-serif;
+    transition: 0.5s;
+  }
+  .navbar-scrolled{
+      background-color: #0f0f1fe1;
+  }
+.navbar-nav .nav-link{
+    padding-left: 0;
+    padding-right: 0;
+}
+ul li{
+    text-align: center;
+    padding: 5px 10px;
+}
+.navbar ul li a{
+    transition: 0.5s;
+}
+.navbar ul li a:hover{
+    background-color: aliceblue;
+    color: rgb(207, 52, 52);
+    border-radius: 100px;
+}
+.parallax{
+    background: url(image/header4/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parallax section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+}
+.parallax section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    background-color: #554f70;
+    font-size: 14px;
+    font-family: 'Prompt', sans-serif;
+    color: aliceblue;
+  }
+  footer .footer-top{
+    background: #0e0e22;
+    padding: 50px 0px 20px;
+    /* margin-top: 150px; */
+  }
+  footer .footer-top h2{
+    color: #4e5063;
+  }
+  footer .footer-top p{
+    color: #4e5063;
+  }
+  #source{
+    color: #4e5063;
+    text-decoration: none;
+  }
+  #source:hover{
+    color: #ccc;
+  }
+  .feature{
+    background: url(image4/bg-malaria2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 150px;
+}
+.button-box .container-md{
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+  }
+  .malaria-box{
+    font-family: 'Prompt', sans-serif;
+    padding-top: 250px;
+  }
+  .malaria-info{
+    margin-left:200px;
+  }
+  .malaria-info a{
+    text-decoration: none;
+    background-color: #e3b758;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: rgb(27, 20, 31);
+    transition: .2s linear;
+    font-size: 20px;
+}
+.malaria-info a:hover{
+    background-color: #0a2c77;
+    color: aliceblue;
+}
+  .malaria-info h2{
+    font-weight: bold;
+    color: #2f308f;
+  }
+  .malaria-box h1{
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: #b8293c;
+
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #13337a; */
+  }
+
+  .swiper-slide img {
+    display: block;
+    margin: auto;
+    width: 200px;
+  }
+  .swiper-slide img:hover{
+    transform: scale(1.1);
+    transition: all .2s linear;
+  }
+  .swiper-slide p{
+    margin-top: 20px;
+  }
+  .swiper {
+    width: 100%;
+    height: 350px;
+    margin: 20px auto;
+  }
+.symptom-item{
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+}
+.symptom-item h1{
+    background-color: #2f308f;
+    max-width: 450px;
+    font-size: 30px;
+    padding: 8px 15px;
+    margin: auto;
+    border-radius: 50px;
+    color: aliceblue;
+}
+.symptom-item p{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.symptom-ml{
+    margin: 50px 200px;
+}
+.symtom-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.symtom-box-1 img{
+  width: 200px;
+  margin: 0 50px;
+}
+.symtom-box-1 img:hover{
+  transform: scale(1.1);
+  transition: all .2s linear;
+}
+.pill-item{
+    margin: 50px 200px;
+    font-family: 'Prompt', sans-serif;
+}
+.pill-item h1{
+    text-align: center;
+    background-color: #2f308f;
+    max-width: 420px;
+    padding: 8px 15px;
+    margin: auto;
+    font-size: 30px;
+    border-radius: 50px;
+    color: aliceblue;
+}
+.pill-item h4{
+    text-align: center;
+    color: #13337a;
+}
+.malaria-img{
+    max-width: 250px;
+    margin: 50px auto;
+}
+
+.disease-item{
+    margin-top: 200px;
+    font-family: 'Prompt', sans-serif;
+    height: 900px;
+}
+.disease-item h1{
+    text-align: center;
+    font-weight: bold;
+    color: #13337a;
+}
+.malaria-pv {
+    margin-left: 200px;
+}
+.malaria-pv h2{
+    font-weight: bold;
+    color: #2f308f;
+}
+.malaria-pv .accordion{
+    margin-top: 20px;
+}
+.malaria-pv .accordion-item{
+    box-shadow: 0 .5rem 1rem rgba(63, 30, 141, 0.6);
+}
+@media (max-width: 1200px){
+    .symptom-ml{
+        margin: 0px;
+    }
+    .malaria-info{
+        margin-left:00px;
+      }
+      .pill-item{
+        margin: 0px;
+        font-family: 'Prompt', sans-serif;
+    }
+    .malaria-pv {
+        margin-left: 00px;
+        margin-top: 100px;
+    }
+    #pv-img{
+      margin-top: 50px;
+    }
+}
+@media (max-width: 576px){
+  .malaria-info{
+    margin-left:00px;
+    background: rgb(255, 255, 255, .8);
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
+@media (max-width: 768px){
+  .malaria-info{
+    margin-left:00px;
+    background: rgb(255, 255, 255, .8);
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
+@media (max-width: 768px){
+  .symtom-box{
+    flex-direction: column;
+  }
+#title{
+  object-fit: contain;
+  display: none;
+}
+#tree_mid{
+  background: url(image/header4/res-title.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+  
+}
