@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+#btn{
+    margin: 0 10px;
+    border-radius: 50px;
+    padding: 6px 15px;
+    background-color: rgb(64, 182, 182);
+}
+.navbar{
+    background: #00000080;
+    font-family: 'Prompt', sans-serif;
+    z-index: 3;
+    transition: 0.5s;
+}
+.navbar-scrolled{
+    background-color: #0f0f1fe1;
+}
+.navbar-nav .nav-link{
+    padding-left: 0;
+    padding-right: 0;
+}
+ul li{
+    text-align: center;
+    padding: 5px 10px;
+}
+.navbar ul li a{
+    transition: 0.5s;
+}
+.navbar ul li a:hover{
+    background-color: aliceblue;
+    color: rgb(207, 52, 52);
+    border-radius: 100px;
+}
+.parallax{
+    background: url(header3/bg4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parallax section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+}
+.parallax section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feature{
+    z-index: 2;
+    background: url(image3/side.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 150px;
+}
+.bug-box{
+    background: url(image3/bg-bug-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+.bug-item img{
+    left: 0;
+}
+.bug-item .bug-text{
+    font-family: 'Prompt', sans-serif;
+    color: aliceblue;
+    margin-left: 50px;
+}
+.bug-item .bug-text h1{
+    font-size: 5em;
+    background-image: linear-gradient(180deg, #ffffff 0%,  #aa3c3c 100%);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bug-item .bug-text p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.bug-item .bug-add img{
+    width: 120px;
+    transition: 0.2s;
+}
+.bug-item .bug-add img:hover{
+    transform: scale(1.1);
+}
+.bug-item .bug-add p{
+    font-size: 16px;
+    visibility: hidden;
+} 
+.bug-add{
+    font-family: 'Prompt', sans-serif;
+}
+.host-item h1{
+    font-family: 'Prompt', sans-serif;
+    margin-top: 50px;
+    font-weight: bold;
+    color: #13337a;
+}
+.host-item p{
+    font-family: 'Prompt', sans-serif;
+    font-size:25px;
+    margin-top: 50px;
+}
+.disease-item{
+    margin-top: 200px;
+    font-family: 'Prompt', sans-serif;
+}
+.disease-item h1{
+    text-align: center;
+    font-weight: bold;
+    color: #13337a;
+}
+.malaria{
+    margin: 100px;
+}
+.malaria-text{
+    padding: 4rem;
+    font-size: 20px;
+    margin: auto;
+    
+}
+.malaria-text a{
+    text-decoration: none;
+    background-color: #802136;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: aliceblue;
+    transition: .2s linear;
+
+}
+.malaria-text a:hover{
+     background-color: #2f308f;
+}
+.malaria-text p{
+    margin-bottom: 50px;
+}
+.prevent-item{
+    font-family: 'Prompt', sans-serif;
+}
+.prevention h1{
+    font-weight: bold;
+    color: #13337a;
+    font-family: 'Prompt', sans-serif;
+    margin-top: 200px;
+} 
+.prevent-item .card{
+    margin: auto;
+    height: 345px;
+    margin-top: 50px;
+    box-shadow: 0 .5rem 1rem rgba(24, 74, 139, 0.5);
+}
+.card-text{
+    font-size: 20px;
+}
+footer{
+    background-color: #554f70;
+    font-size: 14px;
+    color: aliceblue;
+    font-family: 'Prompt', sans-serif;
+  }
+  footer .footer-top{
+    background: #0e0e22;
+    padding: 50px 0px 20px;
+    /* margin-top: 150px; */
+  }
+  footer .footer-top p{
+    color: #4e5063;
+  }
+  footer .footer-top h2{
+    color: #4e5063;
+  }
+  #source{
+    color: #4e5063;
+    text-decoration: none;
+  }
+  #source:hover{
+    color: #ccc;
+  }
+
+  @media (max-width: 1080px){
+    .parallax img#title{
+        object-fit: contain;
+        width: 170%;
+    }
+}
+@media (max-width: 992px){
+    .bug-item{
+        flex-direction: column;
+    }
+    .malaria{
+        margin: 0px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 1200px){
+    .bug-item{
+        flex-direction: column;
+    }
+    .malaria{
+        margin: 0px;
+        flex-direction: column;
+    }
+    .bug-box{
+        background: url(image3/bg-bug-02-01.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+    }
+}
