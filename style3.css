@@ -216,6 +216,9 @@ footer{
     }
 }
 @media (max-width: 1200px){
+    html{
+        overflow-x: hidden;
+      }
     .bug-item{
         flex-direction: column;
     }

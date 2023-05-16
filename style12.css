@@ -454,6 +454,12 @@ font-family: 'Prompt', sans-serif;
   box-shadow: 2px 2px 10px rgba(33, 13, 83, 0.25);
 }
 @media (max-width: 1200px){
+  html{
+    overflow-x: hidden;
+  }
+  html{
+    overflow-x: hidden;
+  }
     .symptom-ml{
         margin: 0px;
     }

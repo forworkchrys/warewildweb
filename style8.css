@@ -239,6 +239,9 @@ footer{
     box-shadow: 0 .5rem 1rem rgba(63, 30, 141, 0.6);
 }
 @media (max-width: 1200px){
+  html{
+    overflow-x: hidden;
+  }
     .symptom-ml{
         margin: 0px;
     }

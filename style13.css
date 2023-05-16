@@ -355,6 +355,9 @@ footer{
 }
 
 @media (max-width: 1200px){
+    html{
+        overflow-x: hidden;
+      }
     .malaria-info{
         margin-right:00px;
       }

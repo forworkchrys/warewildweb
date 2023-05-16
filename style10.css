@@ -243,6 +243,9 @@ footer{
     font-size: 18px;
 }
 @media (max-width: 1200px){
+  html{
+    overflow-x: hidden;
+  }
     .symptom-ml{
         margin: 0px;
     }
